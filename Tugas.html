@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Data Siswa</title>
+</head>
+<body class="bg-light p-4">
+    <div class="container bg-white p-4 rounded shadow">
+        <h2 class="text-info mb-4">Data Asal Sekolah</h2>
+        <div class="mb-4">
+            <label class="form-label">Nama Sekolah <span class="text-danger">*</span></label>
+            <div class="d-flex align-items-center bg-light p-3 rounded">
+                <img alt="School logo" class="w-25 me-3" src="assets/logo.jpg" />
+                <div>
+                    <div class="text-info fw-bold">SDN 03 JATIPURO</div>
+                    <div class="text-secondary small">KENDAL, JATIPURO, KOTA MALANG, JAWA TIMUR</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="text-info mb-4">Biodata Siswa</h2>
+        <div class="mb-4">
+            <label class="form-label">Nama Lengkap</label>
+            <input class="form-control" type="text" value="ANGGITA FEBRIANA PUTRI"/>
+        </div>
+        <div class="mb-4 row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Jenis Kelamin</label>
+                <div class="form-check">
+                    <input class="form-check-input" id="laki-laki" name="gender" type="radio" />
+                    <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="perempuan" name="gender" type="radio" checked />
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">NISN</label>
+                <input class="form-control" type="text" value="0001450164"/>
+            </div>
+        </div>
+        <div class="mb-4 row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Tempat Lahir</label>
+                <input class="form-control" type="text" value="Indonesia"/>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Tanggal Lahir</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" value="28 Februari 2007"/>
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="text-info mb-4">Alamat Siswa</h2>
+        <div class="mb-4">
+            <label class="form-label">Alamat Siswa <span class="text-danger">*</span></label>
+            <textarea class="form-control">Jl. Jambu Kluthuk</textarea>
+        </div>
+        <div class="mb-4 row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Provinsi <span class="text-danger">*</span></label>
+                <select class="form-select">
+                    <option value="Jawa Timur">Jawa Timur</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Kota / Kabupaten <span class="text-danger">*</span></label>
+                <select class="form-select">
+                    <option value="Kota Malang">Kota Malang</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-4 row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Kecamatan</label>
+                <input class="form-control" type="text" value="Belimbing"/>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Kelurahan</label>
+                <input class="form-control" type="text" value="Arjosari"/>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
